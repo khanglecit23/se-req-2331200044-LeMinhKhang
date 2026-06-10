@@ -1,5 +1,5 @@
 {
-  "savedAt": "2026-06-10T05:00:39.513Z",
+  "savedAt": "2026-06-10T06:06:24.326Z",
   "groups": [
     {
       "id": "505661ac-f1fb-4b9d-9f41-49097d3d909e",
@@ -17,13 +17,94 @@
       "color": "#d97706"
     }
   ],
-  "tickets": [],
+  "tickets": [
+    {
+      "id": "71c1a2df-6ca8-4c0c-91fd-edbfa064cb76",
+      "title": "US001 – EDU Email Registration",
+      "description": "As a Student, I want to register using my university .edu email address, so that only verified campus members can access the marketplace.",
+      "groupId": "3fa266b5-fed4-4ed3-a3c9-872ba94f294d",
+      "status": "todo",
+      "type": "User Story",
+      "priority": "Medium",
+      "owner": "Khang"
+    },
+    {
+      "id": "27520b27-38bf-4219-ac6f-e4dba24fcd1f",
+      "title": "US002 – Safe Exchange Zone Selection",
+      "description": "As a Student, I want to select a Safe Exchange Zone before contacting a seller or buyer, so that in-person transactions occur in safer locations.",
+      "groupId": "3fa266b5-fed4-4ed3-a3c9-872ba94f294d",
+      "status": "todo",
+      "type": "User Story",
+      "priority": "Medium",
+      "owner": "Khang"
+    },
+    {
+      "id": "015e0e5e-9d2a-47bc-9c8b-4989ca302dd1",
+      "title": "US003 – Barcode-Based Textbook Listing",
+      "description": "As a Student, I want to scan a textbook barcode with my phone camera, so that item details can be entered automatically.",
+      "groupId": "3fa266b5-fed4-4ed3-a3c9-872ba94f294d",
+      "status": "todo",
+      "type": "User Story",
+      "priority": "Medium",
+      "owner": "Khang"
+    },
+    {
+      "id": "8e519282-3459-449b-87b6-5138fbe4b928",
+      "title": "US004 – Auction Listings",
+      "description": "As a Student, I want to create auction listings for my items, so that buyers can compete and potentially increase the final selling price.",
+      "groupId": "3fa266b5-fed4-4ed3-a3c9-872ba94f294d",
+      "status": "todo",
+      "type": "User Story",
+      "priority": "Medium",
+      "owner": "Khang"
+    },
+    {
+      "id": "5c6c646b-25ad-40f7-a193-bfec93a90a71",
+      "title": "US005 – Marketplace Policy Administration",
+      "description": "As an Administrator/Staff, I want to manage approved Safe Exchange Zones and monitor marketplace activity, so that the platform remains safe and compliant with university policies.",
+      "groupId": "3fa266b5-fed4-4ed3-a3c9-872ba94f294d",
+      "status": "todo",
+      "type": "User Story",
+      "priority": "Medium",
+      "owner": "Khang"
+    },
+    {
+      "id": "06e5f4cd-f0ba-4cce-8a5c-518df2c0a700",
+      "title": "NFR Epic 1: Only users with a valid .edu email address can create accounts, preven",
+      "description": "Only users with a valid .edu email address can create accounts, preventing unauthorized access.",
+      "groupId": "3fa266b5-fed4-4ed3-a3c9-872ba94f294d",
+      "status": "todo",
+      "type": "Epic",
+      "priority": "Medium",
+      "owner": ""
+    },
+    {
+      "id": "d4f26863-97a5-47a3-bb05-cb42f76b0eea",
+      "title": "NFR Epic 2: The system should quickly process barcode scans, load listings, and su",
+      "description": "The system should quickly process barcode scans, load listings, and support many students using the marketplace simultaneously without noticeable delays.",
+      "groupId": "3fa266b5-fed4-4ed3-a3c9-872ba94f294d",
+      "status": "todo",
+      "type": "Epic",
+      "priority": "Medium",
+      "owner": ""
+    },
+    {
+      "id": "1f53f2d9-c00b-40cc-88b1-6a30201f41e5",
+      "title": "NFR Epic 3: The app should be easy to use, including features such as barcode scan",
+      "description": "The app should be easy to use, including features such as barcode scanning for textbook listings and simple item posting/auction creation.",
+      "groupId": "3fa266b5-fed4-4ed3-a3c9-872ba94f294d",
+      "status": "todo",
+      "type": "Epic",
+      "priority": "Medium",
+      "owner": ""
+    }
+  ],
   "analysis": {
     "ambiguity1": "\"The app should force users to select a safe zone before they can chat.\"\nVague because it does not define what \"select\" means, whether users must meet there, or what happens if no safe zone is available.",
-    "ambiguity2": "",
-    "conflictSolution": "",
-    "nfr1": "",
-    "nfr2": "",
-    "nfr3": ""
+    "ambiguity2": "\"We want the app to suggest Safe Exchange Zones for all physical meetups.\"\nVague because it does not specify how zones are chosen, how many should be suggested, or whether users can choose a different location.",
+    "conflictSolution": "Conflict:\nThe Student Union President wants the app to take a 2% transaction fee, but the University Legal Team says the app cannot process payments because the university cannot handle money.\n\nProposed Solution:\nThe app should not process payments directly. Students can pay each other using external services (e.g., Venmo, Cash App) or cash. If a transaction fee is required, it should be handled by an independent third-party service outside the university's control, subject to legal approval. This keeps the university from acting as a payment processor while allowing marketplace transactions.",
+    "nfr1": "Only users with a valid .edu email address can create accounts, preventing unauthorized access.",
+    "nfr2": "The system should quickly process barcode scans, load listings, and support many students using the marketplace simultaneously without noticeable delays.",
+    "nfr3": "The app should be easy to use, including features such as barcode scanning for textbook listings and simple item posting/auction creation."
   }
 }

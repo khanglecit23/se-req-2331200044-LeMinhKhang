@@ -1,5 +1,5 @@
 {
-  "savedAt": "2026-06-10T05:18:02.630Z",
+  "savedAt": "2026-06-10T06:11:44.284Z",
   "groups": [
     {
       "id": "28db1a24-6dc7-4b1f-9a7a-6ae23f21979c",
@@ -17,13 +17,94 @@
       "color": "#d97706"
     }
   ],
-  "tickets": [],
+  "tickets": [
+    {
+      "id": "698844f1-946c-4ea0-9314-1731e4628314",
+      "title": "US001 – Mobile Food Ordering",
+      "description": "As a Student, I want to place my cafeteria order from my phone before arriving at the cafeteria, so that I can reduce waiting time during the lunch rush.",
+      "groupId": "df7b2168-3f5f-460e-af6c-7b77c0bb6eaa",
+      "status": "todo",
+      "type": "User Story",
+      "priority": "Medium",
+      "owner": "Khang"
+    },
+    {
+      "id": "98055803-f094-42a1-99e2-412cf57ed2d1",
+      "title": "US002 – Allergy-Based Menu Filtering",
+      "description": "As a Student with food allergies, I want to filter menu items by allergens, so that I only see food that is safe for me to eat.",
+      "groupId": "df7b2168-3f5f-460e-af6c-7b77c0bb6eaa",
+      "status": "todo",
+      "type": "User Story",
+      "priority": "Medium",
+      "owner": ""
+    },
+    {
+      "id": "d84310e0-71fb-4ba6-bdf2-1613e8168f52",
+      "title": "US003 – Daily Special Notifications",
+      "description": "As a Student, I want to receive notifications about daily specials and discounts, so that I can take advantage of cafeteria promotions.",
+      "groupId": "df7b2168-3f5f-460e-af6c-7b77c0bb6eaa",
+      "status": "todo",
+      "type": "User Story",
+      "priority": "Medium",
+      "owner": "Khang"
+    },
+    {
+      "id": "ae4c3019-5518-4636-9181-587590f9a5c8",
+      "title": "US004 – Sold-Out Item Management",
+      "description": "As an Administrator/Staff (Chef), I want to mark menu items as sold out immediately, so that students cannot order food that is no longer available.",
+      "groupId": "df7b2168-3f5f-460e-af6c-7b77c0bb6eaa",
+      "status": "todo",
+      "type": "User Story",
+      "priority": "Medium",
+      "owner": "Khang"
+    },
+    {
+      "id": "4007ed2a-e991-4088-9994-7f200ed8d11b",
+      "title": "US005 – Kitchen Order Display",
+      "description": "As an Administrator/Staff (Kitchen Staff), I want to view incoming orders on a kitchen display screen, so that food can be prepared efficiently and in order.",
+      "groupId": "df7b2168-3f5f-460e-af6c-7b77c0bb6eaa",
+      "status": "todo",
+      "type": "User Story",
+      "priority": "Medium",
+      "owner": "Khang"
+    },
+    {
+      "id": "8cbaaf00-b973-4bcc-9a86-d1faeb16662e",
+      "title": "NFR Epic 1: The system should protect user account and order information, ensuring",
+      "description": "The system should protect user account and order information, ensuring only authorized users can access cafeteria ordering features.",
+      "groupId": "df7b2168-3f5f-460e-af6c-7b77c0bb6eaa",
+      "status": "todo",
+      "type": "Epic",
+      "priority": "Medium",
+      "owner": ""
+    },
+    {
+      "id": "5805bec4-e689-4371-b015-17e1ab23717c",
+      "title": "NFR Epic 2: The system should display new orders and sold-out updates quickly and ",
+      "description": "The system should display new orders and sold-out updates quickly and continue operating for at least 10 minutes during internet outages without crashing.",
+      "groupId": "df7b2168-3f5f-460e-af6c-7b77c0bb6eaa",
+      "status": "todo",
+      "type": "Epic",
+      "priority": "Medium",
+      "owner": ""
+    },
+    {
+      "id": "86070f8b-53ee-45b3-b41e-72b828b3b2fc",
+      "title": "NFR Epic 3: The app should be easy to use, providing mobile ordering, menu filteri",
+      "description": "The app should be easy to use, providing mobile ordering, menu filtering for allergies, and clear notifications about item availability.",
+      "groupId": "df7b2168-3f5f-460e-af6c-7b77c0bb6eaa",
+      "status": "todo",
+      "type": "Epic",
+      "priority": "Medium",
+      "owner": ""
+    }
+  ],
   "analysis": {
     "ambiguity1": "\"We need to reduce the queue.\"\nVague because it does not specify by how much the queue should be reduced or how success will be measured.",
-    "ambiguity2": "",
-    "conflictSolution": "",
-    "nfr1": "",
-    "nfr2": "",
-    "nfr3": ""
+    "ambiguity2": "\"The kitchen needs a screen that shows orders as they come in.\"\nVague because it does not define how quickly orders must appear, what information should be displayed, or how the screen should behave during high order volumes.",
+    "conflictSolution": "The Chef wants items marked as Sold Out instantly so students cannot order unavailable food, while the IT Infrastructure Team states the kitchen system must continue working offline for up to 10 minutes during internet outages.\n Proposed Solution:\nImplement local caching and synchronization:\n\nThe kitchen display can continue operating offline.\nSold-out changes are stored locally and synced automatically when the connection returns.\nStudent apps should display a warning when inventory information may be outdated due to connectivity issues.\nOnce connectivity is restored, all devices immediately receive the latest inventory updates.",
+    "nfr1": "The system should protect user account and order information, ensuring only authorized users can access cafeteria ordering features.",
+    "nfr2": "The system should display new orders and sold-out updates quickly and continue operating for at least 10 minutes during internet outages without crashing.",
+    "nfr3": "The app should be easy to use, providing mobile ordering, menu filtering for allergies, and clear notifications about item availability."
   }
 }
