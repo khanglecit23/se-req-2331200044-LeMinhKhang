@@ -1,0 +1,29 @@
+{
+  "savedAt": "2026-06-10T05:18:02.630Z",
+  "groups": [
+    {
+      "id": "28db1a24-6dc7-4b1f-9a7a-6ae23f21979c",
+      "name": "Blockers",
+      "color": "#2563eb"
+    },
+    {
+      "id": "df7b2168-3f5f-460e-af6c-7b77c0bb6eaa",
+      "name": "Standard Work",
+      "color": "#059669"
+    },
+    {
+      "id": "aec10145-b8a3-448e-b010-2d0f6abc7012",
+      "name": "Minors",
+      "color": "#d97706"
+    }
+  ],
+  "tickets": [],
+  "analysis": {
+    "ambiguity1": "\"We need to reduce the queue.\"\nVague because it does not specify by how much the queue should be reduced or how success will be measured.",
+    "ambiguity2": "",
+    "conflictSolution": "",
+    "nfr1": "",
+    "nfr2": "",
+    "nfr3": ""
+  }
+}
