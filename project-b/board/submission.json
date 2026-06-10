@@ -1,0 +1,29 @@
+{
+  "savedAt": "2026-06-10T05:00:39.513Z",
+  "groups": [
+    {
+      "id": "505661ac-f1fb-4b9d-9f41-49097d3d909e",
+      "name": "Blockers",
+      "color": "#2563eb"
+    },
+    {
+      "id": "3fa266b5-fed4-4ed3-a3c9-872ba94f294d",
+      "name": "Standard Work",
+      "color": "#059669"
+    },
+    {
+      "id": "ab6c3939-ee57-4fa5-b357-f4cb398527be",
+      "name": "Minors",
+      "color": "#d97706"
+    }
+  ],
+  "tickets": [],
+  "analysis": {
+    "ambiguity1": "\"The app should force users to select a safe zone before they can chat.\"\nVague because it does not define what \"select\" means, whether users must meet there, or what happens if no safe zone is available.",
+    "ambiguity2": "",
+    "conflictSolution": "",
+    "nfr1": "",
+    "nfr2": "",
+    "nfr3": ""
+  }
+}
