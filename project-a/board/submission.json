@@ -1,0 +1,29 @@
+{
+  "savedAt": "2026-06-10T04:51:44.098Z",
+  "groups": [
+    {
+      "id": "68620eaa-5041-4fde-b4df-268c47f897d6",
+      "name": "Blockers",
+      "color": "#2563eb"
+    },
+    {
+      "id": "f0c094ac-c9a1-4e29-b01d-830d406ed19a",
+      "name": "Standard Work",
+      "color": "#059669"
+    },
+    {
+      "id": "3c88ed4a-a544-4242-bf5b-a5040d68ac5c",
+      "name": "Minors",
+      "color": "#d97706"
+    }
+  ],
+  "tickets": [],
+  "analysis": {
+    "ambiguity1": "\"The system needs to stop them from even asking.\"\nVague because it does not specify how the system should prevent prerequisite questions.",
+    "ambiguity2": "",
+    "conflictSolution": "",
+    "nfr1": "",
+    "nfr2": "",
+    "nfr3": ""
+  }
+}
