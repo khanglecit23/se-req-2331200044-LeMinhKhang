@@ -1,5 +1,5 @@
 {
-  "savedAt": "2026-06-10T04:51:44.098Z",
+  "savedAt": "2026-06-10T05:47:54.265Z",
   "groups": [
     {
       "id": "68620eaa-5041-4fde-b4df-268c47f897d6",
@@ -17,13 +17,94 @@
       "color": "#d97706"
     }
   ],
-  "tickets": [],
+  "tickets": [
+    {
+      "id": "1c46818d-6966-496b-ad8f-b1ceb4abdc92",
+      "title": "US001 – Student Roadmap Validation",
+      "description": "As a Student, I want to receive prerequisite validation when adding courses to my roadmap, so that I do not select courses I am not eligible to take.",
+      "groupId": "f0c094ac-c9a1-4e29-b01d-830d406ed19a",
+      "status": "todo",
+      "type": "User Story",
+      "priority": "Medium",
+      "owner": "Khang"
+    },
+    {
+      "id": "d2e58021-ef12-4e9a-ab8e-7c65871ea845",
+      "title": "US002 – Drag-and-Drop Schedule Planning",
+      "description": "As a Student, I want to drag and drop courses into a calendar view, so that I can easily build and visualize my academic schedule.",
+      "groupId": "f0c094ac-c9a1-4e29-b01d-830d406ed19a",
+      "status": "todo",
+      "type": "User Story",
+      "priority": "Medium",
+      "owner": "Khang"
+    },
+    {
+      "id": "bed9eac4-ccfa-4d2e-92c0-ec795e94f808",
+      "title": "US003 – Early Morning Class Warning",
+      "description": "As a Student, I want to receive a warning when selecting classes that start at 8:00 AM, so that I can avoid schedules that may be difficult for me to attend.",
+      "groupId": "f0c094ac-c9a1-4e29-b01d-830d406ed19a",
+      "status": "todo",
+      "type": "User Story",
+      "priority": "Medium",
+      "owner": "Khang"
+    },
+    {
+      "id": "801632e3-78f5-4355-b102-80d261814df6",
+      "title": "US004 – Four-Year Academic Planning",
+      "description": "As a Student, I want to plan courses several years in advance, so that I can create a complete graduation roadmap.",
+      "groupId": "f0c094ac-c9a1-4e29-b01d-830d406ed19a",
+      "status": "todo",
+      "type": "User Story",
+      "priority": "Medium",
+      "owner": "Khang"
+    },
+    {
+      "id": "d254076e-2e7c-44aa-ade1-f4bb3a5ec7db",
+      "title": "US005 – Advisor Override Management",
+      "description": "As an Administrator/Staff (Advisor), I want to manually override prerequisite restrictions, so that students with approved special permission can enroll in courses.",
+      "groupId": "f0c094ac-c9a1-4e29-b01d-830d406ed19a",
+      "status": "todo",
+      "type": "User Story",
+      "priority": "Medium",
+      "owner": "Khang"
+    },
+    {
+      "id": "6dd33d24-8443-4b97-ae61-f7fa7269a0c0",
+      "title": "NFR Epic 1: Students must not be able to view another student's schedule, and all ",
+      "description": "Students must not be able to view another student's schedule, and all advisor overrides must be logged for auditing.",
+      "groupId": "f0c094ac-c9a1-4e29-b01d-830d406ed19a",
+      "status": "todo",
+      "type": "Epic",
+      "priority": "Medium",
+      "owner": ""
+    },
+    {
+      "id": "76a6b8c1-1447-4ba9-aea1-8eaccb4e62df",
+      "title": "NFR Epic 2: The system should connect to the live database and provide up-to-date ",
+      "description": "The system should connect to the live database and provide up-to-date course availability information when students plan courses.",
+      "groupId": "f0c094ac-c9a1-4e29-b01d-830d406ed19a",
+      "status": "todo",
+      "type": "Epic",
+      "priority": "Medium",
+      "owner": ""
+    },
+    {
+      "id": "c397c5f3-af2c-4f6d-b36d-ce152077b588",
+      "title": "NFR Epic 3: The system should provide an easy-to-use interface, including drag-and",
+      "description": "The system should provide an easy-to-use interface, including drag-and-drop scheduling and clear prerequisite warnings.",
+      "groupId": "f0c094ac-c9a1-4e29-b01d-830d406ed19a",
+      "status": "todo",
+      "type": "Epic",
+      "priority": "Medium",
+      "owner": ""
+    }
+  ],
   "analysis": {
     "ambiguity1": "\"The system needs to stop them from even asking.\"\nVague because it does not specify how the system should prevent prerequisite questions.",
-    "ambiguity2": "",
-    "conflictSolution": "",
-    "nfr1": "",
-    "nfr2": "",
-    "nfr3": ""
+    "ambiguity2": "\"Warn me if I choose a class that starts at 8:00 AM.\"\nVague because it is a personal preference and does not specify whether the warning applies to all users or can be customized.",
+    "conflictSolution": "Conflict:\nThe Registrar wants students blocked from adding full classes to their roadmap, while the Head of Advising wants students to plan up to 4 years ahead even when future class availability is unknown.\n\nProposed Solution:\nAllow students to add future courses to their roadmap for planning purposes, but display availability status. For current terms, block enrollment in classes that are full. For future terms, show classes as \"availability unknown\" until scheduling data is available.",
+    "nfr1": "Students must not be able to view another student's schedule, and all advisor overrides must be logged for auditing.",
+    "nfr2": "The system should connect to the live database and provide up-to-date course availability information when students plan courses.",
+    "nfr3": "The system should provide an easy-to-use interface, including drag-and-drop scheduling and clear prerequisite warnings."
   }
 }
